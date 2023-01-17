@@ -1,0 +1,43 @@
+.Card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #cbe6e0;
+    background: rgba(255,255,255,0.16);
+    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px 0 rgba(0,0,0,0.20);
+    border-radius: 4px;
+    h5{
+      font-size: 16px;
+      margin-top: 20px;
+      color:#000;
+      line-height: 1.5;
+    }
+    &__status{
+        position: absolute;
+        font-size: 0.6em;
+        letter-spacing: 0.25px;
+        line-height: 2;
+        right: 12px;
+        top: 5px;
+        span{
+          padding: 6px;
+        }
+        .Dead{
+          background-color:#B00020;
+          color: #fff;
+        }
+        .Alive{
+          background-color:#2ecc71;
+          color: #fff;
+         }
+      }
+    &__media{
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }

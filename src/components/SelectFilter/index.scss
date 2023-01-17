@@ -1,0 +1,36 @@
+.SelectFilter {
+  // position: fixed;
+  position: relative;
+  box-shadow: 0px 2px 4px;
+  border: none;
+  width: 100%; 
+  top: 0;
+  right: 0;
+  z-index: 10;
+  .input-field{
+    margin: 0;
+  }
+  .dropdown-trigger{
+    display:none;
+  }
+  ul{
+    width: 100%;
+    display: flex!important;
+    opacity: 1;
+    display: block;
+    li{
+      text-align: center;
+    }
+  }
+
+ .select-wrapper {
+    position: relative;
+    padding: 0px 12px;
+    .caret{ fill: #2bbbad;}
+    input{
+      color: #2bbbad;
+      border-bottom: none;
+    }
+  }
+}
+
