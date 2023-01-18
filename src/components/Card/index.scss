@@ -9,11 +9,21 @@
     background: rgba(255,255,255,0.16);
     box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px 0 rgba(0,0,0,0.20);
     border-radius: 4px;
+    height: fit-content;
     h5{
       font-size: 16px;
-      margin-top: 20px;
+      margin:0px;
       color:#000;
       line-height: 1.5;
+    }
+    span{
+      font-size: 14px;
+      margin-top: 8px;
+      color:#000;
+      line-height: 1.5;
+    }
+    &__info{
+      padding: 6px;
     }
     &__status{
         position: absolute;
@@ -22,6 +32,7 @@
         line-height: 2;
         right: 12px;
         top: 5px;
+        background-color:#c9c4c5;
         span{
           padding: 6px;
         }

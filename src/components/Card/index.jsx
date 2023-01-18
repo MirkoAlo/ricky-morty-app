@@ -10,13 +10,9 @@ const Card = (props) => {
       <div className="Card__media">
         <img alt={props.name} src={props.image} />
       </div>
-      <div className="Card__name">
+      <div className="Card__info">
         <h5>{props.name}</h5>
-      </div>
-
-      <div className="Card__location">
-        <div className="Card__location-label"></div>
-        <div className="Card__location-name"></div>
+        <span>{props.species}</span>
       </div>
     </div>
   );

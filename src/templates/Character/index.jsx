@@ -24,7 +24,7 @@ const Character = () => {
 
   return (
     <>
-      <div className="Grid__title">
+      <div className="Grid__heading">
         <h3>
           <b>Characters</b>
         </h3>
@@ -36,6 +36,7 @@ const Character = () => {
               key={item.id}
               status={item.status}
               name={item.name}
+              species={item.species}
               image={item.image}
             />
           ))}
