@@ -5,7 +5,8 @@ import SelectFilter from "../../components/SelectFilter";
 const Location = () => {
   const [currentId, setId] = useState(1);
   const [locations, setLocations] = useState([]);
-  const [locationName, setLocationName] = useState("Earth (C-137)");
+  const [locationName, setLocationName] = useState();
+  const [locationType, setLocationType] = useState();
   const [characters, setCharacters] = useState([]);
 
   const changeLocation = (e) => {
@@ -24,6 +25,7 @@ const Location = () => {
         `https://rickandmortyapi.com/api/location/${currentId}`
       ).then((response) => response.json());
       setLocationName(data.name);
+      setLocationType(data.type);
 
       let items = await Promise.all(
         data.residents.map((item) => {
@@ -36,10 +38,11 @@ const Location = () => {
 
   return (
     <>
-      <div className="Grid__title">
+      <div className="Grid__heading">
         <h3>
           Location: <b>{locationName}</b>
         </h3>
+        <span>{locationType}</span>
       </div>
       <div className="Grid__wrapper">
         {
@@ -53,6 +56,7 @@ const Location = () => {
               key={item.id}
               status={item.status}
               name={item.name}
+              species={item.species}
               image={item.image}
             />
           ))}

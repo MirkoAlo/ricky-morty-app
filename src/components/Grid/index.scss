@@ -1,8 +1,12 @@
 .Grid{
-  &__title {
+ 
+  &__heading {
     text-align: center;
     b{
       color: #2bbbad;
+    }
+    span{
+      font-size: 16px;
     }
   }
   &__wrapper{
@@ -10,6 +14,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+   
     .Grid__select{
       width: 30%;
       margin: 0 8px;
@@ -22,6 +27,7 @@
       grid-auto-rows: minmax(180px, auto);
       grid-auto-flow: dense;
       margin: 24px 8px;
+      min-height: 100vh;
       &.--character{
         width: 100%;
       }
@@ -44,7 +50,19 @@
       opacity: 1;
     }
   }
-
+  @media only screen and (max-width: 767px) {
+    .Grid__wrapper {
+      width: 100%;
+      flex-direction: column;
+      .Grid__select {
+        width: 90%;
+        margin: 0 auto;
+     }
+     .Grid__layout {
+      width: 90%;
+     }
+    }
+  }
 
 }
 

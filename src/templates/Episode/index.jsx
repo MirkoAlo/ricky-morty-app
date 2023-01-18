@@ -7,7 +7,7 @@ const Episode = () => {
 
   const [episodes, setEpisodes] = useState([]);
 
-  const [episodeName, setEpisodeName] = useState("Pilot");
+  const [episodeName, setEpisodeName] = useState();
 
   const [episodeDate, setEpisodeDate] = useState("");
 
@@ -41,10 +41,11 @@ const Episode = () => {
 
   return (
     <>
-      <div className="Grid__title">
+      <div className="Grid__heading">
         <h3>
           Episode: <b>{episodeName}</b>
         </h3>
+        <span>{episodeDate}</span>
       </div>
       <div className="Grid__wrapper">
         <div className="Grid__select">
@@ -56,6 +57,7 @@ const Episode = () => {
               key={item.id}
               status={item.status}
               name={item.name}
+              species={item.species}
               image={item.image}
             />
           ))}
