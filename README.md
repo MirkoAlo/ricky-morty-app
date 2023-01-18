@@ -1,4 +1,4 @@
-# Ricky & Morty Api
+# Ricky & Morty app
 
 This is a experiment app based on GraphQL API.
 
@@ -22,3 +22,4 @@ Inside the directory cloned go to bc-audio-player an run:
 - [react](https://it.reactjs.org/)
 - [react-materialize](http://react-materialize.github.io/)
 - [EditorConfig](https://editorconfig.org/)
+
