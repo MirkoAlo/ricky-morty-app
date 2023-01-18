@@ -2,7 +2,6 @@
 
 This is a experiment app based on GraphQL API.
 
-
 ## Run the project locally
 ### Requirements
 - [git](https://git-scm.com/)
@@ -23,5 +22,4 @@ Inside the directory cloned go to bc-audio-player an run:
 - [react](https://it.reactjs.org/)
 - [react-materialize](http://react-materialize.github.io/)
 - [EditorConfig](https://editorconfig.org/)
-
 
