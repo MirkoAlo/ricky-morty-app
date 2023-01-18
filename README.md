@@ -1,5 +1,7 @@
 # Ricky & Morty Api
 
+This is a experiment app based on GraphQL API.
+
 ## Run the project locally
 ### Requirements
 - [git](https://git-scm.com/)
@@ -20,10 +22,3 @@ Inside the directory cloned go to bc-audio-player an run:
 - [react](https://it.reactjs.org/)
 - [react-materialize](http://react-materialize.github.io/)
 - [EditorConfig](https://editorconfig.org/)
-
-
-
-## Deploy
-After a commit in main or develop branch, the post-commit action create the build script and save to our CDN (AWS S3).
-- branch **main**: run `npm run build` and the url of the 
-- branch **develop**: run `npm run test` and the url of the 
